@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 8px 10px;
+  border: 2px solid mediumpurple;
+  border-radius: 10px;
+  background: thistle;
+}
+
+.selected {
+  background: mediumpurple;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+.text {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  color: white;
+}

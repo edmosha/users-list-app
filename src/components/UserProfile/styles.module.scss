@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 500px;
+  padding: 20px 30px;
+  border: 2px solid plum;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 14px;
+}
+
+.title {
+  margin: 2px;
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  color: mediumpurple;
+}
+
+.textContainer {
+  display: flex;
+  gap: 14px;
+}
+
+.text {
+  margin: 2px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  color: #1E252B;
+}
