@@ -13,21 +13,21 @@ const UserProfile = () => {
         <div className={styles.container}>
             <Image src={userIcon} alt="user avatar" className={styles.img} />
 
-            <p className={styles.title}>{user.name + " " + user.surname || "Заглушка"}</p>
+            <p className={styles.title}>{user.name + " " + user.surname}</p>
 
             <div className={styles.textContainer}>
                 <p className={styles.text}>Id:</p>
-                <p className={styles.text}>{user.id || 0}</p>
+                <p className={styles.text}>{user.id || ""}</p>
             </div>
 
             <div className={styles.textContainer}>
                 <p className={styles.text}>Возраст:</p>
-                <p className={styles.text}>{user.age || 0}</p>
+                <p className={styles.text}>{user.age || ""}</p>
             </div>
 
             <div className={styles.textContainer}>
                 <p className={styles.text}>Почта:</p>
-                <p className={styles.text}>{user.email || 0}</p>
+                <p className={styles.text}>{user.email || ""}</p>
             </div>
         </div>
     );

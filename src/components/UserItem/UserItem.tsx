@@ -7,12 +7,16 @@ interface Props {
     username: string;
     isSelected: boolean;
     onClick: () => void;
+    reff: any;
 }
 
-const UserItem: FC<Props> = ({username, isSelected, onClick}) => {
+const UserItem: FC<Props> = ({username, isSelected, onClick, reff}) => {
     return (
-        <li className={`${styles.container} ${isSelected ? styles.selected : ""}`} onClick={onClick}>
-            <Image src={userIcon} alt="user icon" className={styles.icon} />
+        <li className={`${styles.container} ${isSelected ? styles.selected : ""}`}
+            onClick={onClick}
+            ref={reff}
+        >
+            <Image src={userIcon} alt="user icon" className={styles.icon}/>
             <p className={styles.text}>{username}</p>
         </li>
     );

@@ -10,11 +10,11 @@ export interface CounterSliceState {
 const initialState: CounterSliceState = {
     users: [],
     selectedUser: {
-        "id": 1,
-        "name": "Leanne",
-        "surname": "Bret",
-        "email": "Sincere@april.biz",
-        "age": 18
+        "id": "",
+        "name": "",
+        "surname": "",
+        "email": "",
+        "age": 0,
     }
 };
 
@@ -23,7 +23,7 @@ export const usersSlice = createSlice({
     initialState,
     reducers: {
         addUsers(state, action: PayloadAction<User[]>) {
-             state.users = action.payload;
+            state.users = [...state.users, ...action.payload];
         },
 
         setSelectedUser(state, action: PayloadAction<User>) {
@@ -32,7 +32,6 @@ export const usersSlice = createSlice({
     },
 });
 
-// Action creators are generated for each case reducer function.
-export const { addUsers, setSelectedUser } = usersSlice.actions;
+export const {addUsers, setSelectedUser} = usersSlice.actions;
 
 export default usersSlice.reducer;
