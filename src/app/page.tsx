@@ -1,5 +1,4 @@
-import styles from "./page.module.css";
-import MainPage from "@/pages/MainPage/MainPage";
+import MainPage from "@/appPages/MainPage/MainPage";
 
 export default function Home() {
   return (
